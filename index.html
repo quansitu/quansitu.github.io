@@ -13,8 +13,25 @@ I was graduated from Tsinghua University, under the supervision of Professor <a 
 </p>
 
 <p>
-Here is my <img src="CV(Quan Situ).pdf" alt="CV" />. 
+Here is my <a href="#" id="showPdf">CV</a>.
 </p>
+    
+<div id="pdfViewer">
+    <object data="path_to_your_pdf.pdf" type="application/pdf" width="100%" height="100%">
+        <p>无法显示 PDF 文件。您可以下载文件<a href="path_to_your_pdf.pdf">这里</a></p>
+    </object>
+</div>
+
+<script>
+    document.getElementById('showPdf').addEventListener('click', function() {
+        document.getElementById('pdfViewer').style.display = 'block';
+    });
+
+    document.getElementById('pdfViewer').addEventListener('click', function() {
+        document.getElementById('pdfViewer').style.display = 'none';
+    });
+</script><img src="CV(Quan Situ).pdf" alt="CV" />. 
+
 
 <p>
 A [photo](/IMG_0324.jpg) of me. 
